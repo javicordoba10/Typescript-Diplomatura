@@ -2,14 +2,32 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Mi aplicación TypeScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestión de Lotes Ganaderos — Base TS</title>
   </head>
   <body>
-    <div id="app"></div>
+    <main class="container">
+      <header class="hero">
+        <h1>Control de Lotes Ganaderos</h1>
+        <p class="subtitle">
+          Aplicación base desarrollada con Vite y TypeScript para administrar lotes,
+          contar cabezas y calcular estimaciones iniciales de peso y valor.
+        </p>
+      </header>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Lotes activos</h2>
+          <button id="simulate-gain-btn" type="button">
+            Simular +15 kg por cabeza
+          </button>
+        </div>
+
+        <p id="summary-text" class="summary"></p>
+        <ul id="lots-list" class="lots-grid"></ul>
+      </section>
+    </main>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
